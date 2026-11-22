@@ -1,0 +1,19 @@
+node_modules/
+session/
+.env
+
+# Runtime data bot (berisi JID grup, nomor, data pribadi)
+data/
+datas/
+
+# Log runtime
+runtime-logs.txt
+errors.txt
+
+# Artefak store legacy/alias di root (kanonik ada di data/)
+antiviewonce.json
+antiviewonce,json
+viewonce.json
+
+# Cadangan file korup dari JsonStore
+*.corrupt-*

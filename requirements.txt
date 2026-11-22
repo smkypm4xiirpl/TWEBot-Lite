@@ -1,0 +1,21 @@
+# ============================================================
+#  WA Sticker Bot - daftar kebutuhan
+#  CATATAN: ini hanya REFERENSI. Instalasi sebenarnya memakai
+#  package.json, cukup jalankan:   npm install
+# ============================================================
+
+# --- Runtime ---
+node >= 20            # teruji di v22.22.2 (Baileys v7 wajib ESM + Node 20+)
+npm  >= 9
+
+# --- Dependencies (npm) ---
+@whiskeysockets/baileys@7.0.0-rc14   # koneksi WhatsApp (package.json: "latest")
+dotenv@16.6.1                        # baca file .env
+ffmpeg-static@5.3.0                  # binary FFmpeg bawaan (video -> sticker, gif -> mp4)
+node-webpmux@3.2.1                   # tanam pack name & author ke WebP
+pino@9.14.0                          # logger (dibungkam, dipakai oleh Baileys)
+sharp@0.34.5                         # gambar -> sticker, sticker -> PNG/GIF
+
+# --- Opsional ---
+# ffmpeg sistem (apt install ffmpeg) + set FFMPEG_PATH di .env
+# bila binary ffmpeg-static tidak jalan di OS kamu.
